@@ -33,8 +33,12 @@
 
 4. **Client**
    Open new terminal.
+    ```bash
    cd src
+    ```
+   ```bash
    node index.js
+   ```
 
 ## API Details
 
