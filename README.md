@@ -1,6 +1,5 @@
-# EnergyGrid Mock API
+# Steps to run client and server
 
-This is the mock backend server for the EnergyGrid Data Aggregator coding assignment.
 
 ## Prerequisites
 
@@ -9,17 +8,13 @@ This is the mock backend server for the EnergyGrid Data Aggregator coding assign
 
 ## Setup and Run
 
-1.  **Navigate to the project directory:**
-    ```bash
-    cd mock-api
-    ```
 
-2.  **Install dependencies:**
+
+1.  **Install dependencies:**
     ```bash
     npm install
     ```
-
-3.  **Start the server:**
+2.  **Start the server:**
     ```bash
     npm start
     ```
@@ -28,7 +23,7 @@ This is the mock backend server for the EnergyGrid Data Aggregator coding assign
     node server.js
     ```
 
-4.  **Verify:**
+3.  **Verify:**
     You should see the following output:
     ```
     ⚡ EnergyGrid Mock API running on port 3000
@@ -36,19 +31,15 @@ This is the mock backend server for the EnergyGrid Data Aggregator coding assign
     ```
     The server is now listening at `http://localhost:3000`.
 
+4. **Client**
+   Open new terminal.
+   cd src
+   node index.js
+
 ## API Details
 
 -   **Base URL:** `http://localhost:3000`
 -   **Endpoint:** `POST /device/real/query`
 -   **Auth Token:** `interview_token_123`
 
-### Security Headers Required
-Every request must include:
-- `timestamp`: Current time in milliseconds.
-- `signature`: `MD5( URL + Token + timestamp )`
 
-### Constraints
-- **Rate Limit:** 1 request per second.
-- **Batch Size:** Max 10 serial numbers per request.
-
-See `instructions.md` for full details.
