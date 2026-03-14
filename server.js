@@ -74,6 +74,7 @@ app.post("/device/real/query", (req, res) => {
   res.json({ data: results });
 });
 
+//3000
 app.listen(3000, () => {
   console.log("⚡ EnergyGrid Mock API running on port 3000");
   console.log("   Constraints: 1 req/sec, Max 10 items/batch");
